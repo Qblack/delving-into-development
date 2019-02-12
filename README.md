@@ -210,30 +210,73 @@ True
 
 
 
-# Virtualenvs 
+# Virtual Environments 
+
+###What are they?
+
+Virtual environments are basically copies of python as well as site packages and scripts that you can associate with your project.
+
+### Why use one?
+
+You would use a virtual environment in many situations:
+
+- You are a machine with other users and do not want your packages to conflict with theirs
+- You require different versions of python. By specifying the source python you can have different applications with various python versions
+- You can have different versions of packages
+
+There are a couple different virtual env systems out there. I personally use virtualenvwrapper-win which wraps virtualenv. There seems to be a growing number of people using pipenv however I found it rather slow and cumbersome so I do not use it. 
+
+With  [virtualenvwrapper-win]: https://pypi.org/project/virtualenvwrapper-win/ your environments by default get created in your users folder but you can set the %**WORKON_HOME**% System variable to make them somewhere else. 
+
+```
+# using pip
+pip install virtualenvwrapper-win
+```
+
+the basic syntax is:
+
+```mkvirtualenv name``` This creates a virtual environment using the system python --python=PATH for specific ones
+
+```workon name``` activates the environment and modifies your system path accordingly. 
+
+```deactivate``` deactivates the current environment
+
+```setprojectdir .``` Allows you to set the project directory to the current one modifying the path and allowing ```workon``` to bring you here by default. If you have weird path issues check "Envs\NAME\Lib\site-packages\virtualenv_path_extensions.pth" to see if anything weird is in there.
+
+```rmvirtualenv name``` deletes the virtualenv or at least tries to.
+
+```lsvirtualenv``` Lists the virtualenvs so that you can remember if you used dashes or underscores when you named it.
 
 
 
-	Virtualenv wrapper
-	Home variable
+
+
 # Requirements.txt
 # setup.py
 # configuring a project to become an executable
 # Accronyms: SOLID, DRY, RTFS, REST
 # Database connections
 
-
 # Important Packages
-## requests
-## pandas
-## numpy
-## jupyter
-## jupyter lab
-## twine
-## sqlalchmey
-## pyodbc
-## celery
-## flower
+
+### os
+### sys
+### csv
+### requests
+### pandas
+### numpy
+### jupyter
+### jupyter lab
+### twine
+Twine is used to upload packages to pip - preferablly in wheel format. If you are running a local pip install you can do something like 
+```
+twine upload dist\package_name.whl -r loacl 
+```
+
+### sqlalchmey
+### pyodbc
+### celery
+### flower
 
 
 # anacondas
@@ -247,3 +290,12 @@ True
 
 * https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md#professional-development
 * http://www.oreilly.com/data/free/archive.html?imm_mid=0e8008&cmp=em-data-confreg-na-stny16_em13_vip_offer_lc 
+
+
+
+
+
+### Misc Other things:
+
+- Docker
+- System Path
