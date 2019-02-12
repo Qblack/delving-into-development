@@ -206,7 +206,14 @@ True
 
 # Source control
 	SVN vs Git -> Github/bitbucket
+[GitTalk]: qblack.github.io/GitTalk	"GitTalk"
+
+
+
 # Virtualenvs 
+
+
+
 	Virtualenv wrapper
 	Home variable
 # Requirements.txt
