@@ -212,7 +212,7 @@ True
 
 # Virtual Environments 
 
-###What are they?
+### What are they?
 
 Virtual environments are basically copies of python as well as site packages and scripts that you can associate with your project.
 
@@ -226,7 +226,7 @@ You would use a virtual environment in many situations:
 
 There are a couple different virtual env systems out there. I personally use virtualenvwrapper-win which wraps virtualenv. There seems to be a growing number of people using pipenv however I found it rather slow and cumbersome so I do not use it. 
 
-With  [virtualenvwrapper-win]: https://pypi.org/project/virtualenvwrapper-win/ your environments by default get created in your users folder but you can set the %**WORKON_HOME**% System variable to make them somewhere else. 
+With [virtualenvwrapper-win]: https://pypi.org/project/virtualenvwrapper-win/ your environments by default get created in your users folder but you can set the %**WORKON_HOME**% System variable to make them somewhere else. 
 
 ```
 # using pip
