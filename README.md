@@ -210,6 +210,12 @@ True
 
 
 
+# PIP
+
+# Requirements.txt 
+
+
+
 # Virtual Environments 
 
 ### What are they?
@@ -251,7 +257,7 @@ the basic syntax is:
 
 
 
-# Requirements.txt
+# 
 # setup.py
 # configuring a project to become an executable
 # Accronyms: SOLID, DRY, RTFS, REST
