@@ -111,6 +111,7 @@ Documentation for other functions such as .upper, .index(), .find(), .isalpha(),
 
 ## [Numbers](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)
 Python will generally handle datatype conversion of numbers for you minus instances like 2 / 5 in python 2.7 being integer division by default.
+
 | Operation | Result |
 | ----------- | ------ |
 | ```x + y``` | sum of x and y |
@@ -134,6 +135,7 @@ Python will generally handle datatype conversion of numbers for you minus instan
 
 ## [Lists](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
 A list represents a mutable series of data that can hold multiple data types. 
+
 | Operation | Result |
 | -------------- | -------- |
 | ``` x in s``` | True if an item of s is equal to x, else False |
